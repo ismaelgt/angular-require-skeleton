@@ -1,0 +1,55 @@
+default:
+  description: 'Build for development environment and watch for changes'
+  tasks:
+    - 'dev'
+    - 'watch'
+
+install:
+  description: 'Install dependencies'
+  tasks:
+    - 'shell:install'
+
+dev:
+  description: 'Build development environment'
+  tasks:
+    - 'clean:dev'
+    - 'jshint:all'
+    - 'jscs:all'
+    - 'scsslint:all'
+    - 'symlink:dev'
+    - 'env:dev'
+    - 'preprocess:dev'
+    - 'sass:dev'
+    - 'ngtemplates:all'
+
+build:
+  description: 'Build production environment'
+  tasks:
+    - 'clean:build'
+    - 'scsslint:all'
+    - 'jshint:all'
+    - 'jscs:all'
+    - 'symlink:build'
+    - 'env:build'
+    - 'preprocess:build'
+    - 'sass:build'
+    - 'ngtemplates:all'
+    - 'requirejs:build'
+    - 'ngAnnotate:build'
+    - 'uglify:build'
+
+test:
+  description: 'Run tests'
+  tasks:
+    - 'karma'
+
+serve-dev:
+  description: 'Start http-server for development environment'
+  tasks:
+    - 'shell:serve-dev'
+
+serve-build:
+  description: 'Start http-server for production environment'
+  tasks:
+    - 'shell:serve-build'
+

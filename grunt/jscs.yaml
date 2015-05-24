@@ -1,0 +1,7 @@
+options:
+  config: '.jscsrc'
+  force: true
+all:
+  - 'Gruntfile.js'
+  - 'karma.conf.js'
+  - '<%= src.root %>/js/**/*.js'

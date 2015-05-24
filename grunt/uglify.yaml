@@ -1,0 +1,7 @@
+build:
+  options:
+    compress:
+      drop_console: true
+  files:
+    '<%= build.root %>/js/main.js' :
+      - '<%= build.root %>/js/main.js'

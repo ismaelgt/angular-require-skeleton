@@ -1,0 +1,27 @@
+css:
+  options:
+    livereload: true
+  files:
+    - '<%= build.root %>/css/*.css'
+
+sass:
+  files:
+    - '<%= src.root%>/scss/**/*.scss'
+  tasks:
+    - 'scsslint:all'
+    - 'sass:dev'
+
+js:
+  files:
+    - 'Gruntfile.js'
+    - '/karma.conf.js'
+    - '<%= src.root %>/js/**/*.js'
+  tasks:
+    - 'jshint:all'
+    - 'jscs:all'
+
+html:
+  files:
+    - '<%= src.root %>/partial/**/*.html'
+  tasks:
+    - 'ngtemplates:all'

@@ -1,0 +1,3 @@
+build:
+  files:
+    '<%= build.root %>/js/main.js' : '<%= build.root %>/js/main.js'

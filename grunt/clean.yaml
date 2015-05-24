@@ -1,0 +1,6 @@
+dev:
+  src:
+    - '<%= dev.root %>'
+build:
+  src:
+    - '<%= build.root %>'

@@ -1,0 +1,11 @@
+options:
+  optimize : 'none'
+  include: ['bootstrap']
+  insertRequire: ['bootstrap']
+  name: '../bower_components/almond/almond'
+
+build:
+  options:
+    baseUrl: '<%= src.root %>/js/'
+    mainConfigFile: '<%= src.root %>/js/require-config.js'
+    out: '<%= build.root %>/js/main.js'

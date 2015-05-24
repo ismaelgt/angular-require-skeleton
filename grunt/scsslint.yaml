@@ -1,0 +1,8 @@
+options:
+  config: '.scss-lint.yml'
+  force: true
+  colorizeOutput: true
+
+all:
+  src:
+    - '<%= src.root %>/scss/**/*.scss'

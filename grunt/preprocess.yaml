@@ -1,0 +1,6 @@
+dev:
+  src: '<%= src.root %>/index.html'
+  dest: '<%= dev.root %>/index.html'
+build:
+  src: '<%= src.root %>/index.html'
+  dest: '<%= build.root %>/index.html'

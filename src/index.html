@@ -1,0 +1,18 @@
+<html ng-csp>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>App</title>
+		<link rel="stylesheet" type="text/css" href="/css/main.css" />
+	</head>
+	<body>
+		<base href="/">
+		<div ui-view></div>
+
+		<!-- @if NODE_ENV == 'development' -->
+		<script src="/bower_components/requirejs/require.js" data-main="/js/require-config"></script>
+		<!-- @endif -->
+		<!-- @if NODE_ENV == 'production' -->
+		<script src="/js/main.js"></script>
+		<!-- @endif -->
+	</body>
+</html>

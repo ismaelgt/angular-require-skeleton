@@ -1,0 +1,1 @@
+# AngularJS-RequireJS skeleton

@@ -1,0 +1,16 @@
+linters:
+  SelectorDepth:
+    enabled: true
+    max_depth: 10
+  NestingDepth:
+    enabled: false
+  PlaceholderInExtend:
+    enabled: false
+  DuplicateProperty:
+    enabled: true
+  Comment:
+    enabled: false
+  Indentation:
+    enabled: true
+    character: tab
+    width: 1

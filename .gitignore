@@ -1,0 +1,8 @@
+.DS_Store
+node_modules
+src/bower_components
+dev
+build
+.sass-cache/
+.idea
+coverage
