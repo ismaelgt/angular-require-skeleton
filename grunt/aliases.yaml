@@ -41,6 +41,7 @@ build:
 test:
   description: 'Run tests'
   tasks:
+    - 'ngtemplates:all'
     - 'karma'
 
 serve-dev:
