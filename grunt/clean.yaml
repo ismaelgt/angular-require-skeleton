@@ -1,6 +1,8 @@
 dev:
   src:
     - '<%= dev.root %>'
+    - '<%= src.root %>/js/templates.js'
 build:
   src:
     - '<%= build.root %>'
+    - '<%= src.root %>/js/templates.js'
